@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     var statePicker: StatePicker?
     var parkPicker: ParkPicker?
+
+    @IBOutlet var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +38,42 @@ class ViewController: UIViewController {
         getParks(for: stateAbbr!)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "explorePark" {
+            // what park selected?
+            let selectedRow = parkPickerView.selectedRow(inComponent: 0)
+            let park = parkPicker?.parkFor(row: selectedRow)
+            
+            let imageViewController = segue.destination as! ImageCollectionViewController
+            imageViewController.park = park
+        }
+    }
+    
     func getParks(for state: String) {
         
         let service = NationalParksService()
+        
+        loadingIndicator.startAnimating()
+        
         service.fetchParks(for: state) { (parks: [NationalPark]?, error: Error?) -> Void in
             
-            if let parks = parks {
-                self.parkPicker!.parks = parks
                 DispatchQueue.main.async {
+                    
+                    self.loadingIndicator.stopAnimating()
+                    
+                    if let error = error {
+                        print(error)
+                        self.present(ErrorAlertController.alert(message: "Unable to fetch parks") , animated: true)
                     self.parkPickerView.reloadAllComponents()
                     self.parkPickerView.selectRow(0, inComponent: 0, animated: true)
                 }
+                    
+                    if let parks = parks {
+                        self.parkPicker!.parks = parks
+                        self.parkPickerView.reloadAllComponents()
+                        self.parkPickerView.selectRow(0, inComponent: 0, animated: true)
+                    }
             }
         }
     }

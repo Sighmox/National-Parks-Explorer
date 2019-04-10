@@ -19,6 +19,15 @@
 		79C0CAD9225D51F900189630 /* ParkPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAD8225D51F900189630 /* ParkPicker.swift */; };
 		79C0CADB225D54F200189630 /* NationalPark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CADA225D54F200189630 /* NationalPark.swift */; };
 		79C0CADD225D550300189630 /* NationalParksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CADC225D550300189630 /* NationalParksService.swift */; };
+		79C0CADF225D5C8600189630 /* ErrorAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CADE225D5C8600189630 /* ErrorAlertController.swift */; };
+		79C0CAE5225D628800189630 /* ImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAE4225D628800189630 /* ImageCollectionViewController.swift */; };
+		79C0CAE7225D62A100189630 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAE6225D62A100189630 /* ImageDetailViewController.swift */; };
+		79C0CAE9225D62AF00189630 /* FlickrImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAE8225D62AF00189630 /* FlickrImage.swift */; };
+		79C0CAEB225D62BA00189630 /* FlickrPhotoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAEA225D62BA00189630 /* FlickrPhotoData.swift */; };
+		79C0CAED225D62C900189630 /* FlickrPhotoSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAEC225D62C900189630 /* FlickrPhotoSet.swift */; };
+		79C0CAEF225D62DB00189630 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAEE225D62DB00189630 /* PhotoCell.swift */; };
+		79C0CAF1225D62EA00189630 /* FlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAF0225D62EA00189630 /* FlickrService.swift */; };
+		79C0CAF3225D6F9A00189630 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C0CAF2225D6F9A00189630 /* FlickrPhoto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +66,15 @@
 		79C0CAD8225D51F900189630 /* ParkPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkPicker.swift; sourceTree = "<group>"; };
 		79C0CADA225D54F200189630 /* NationalPark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalPark.swift; sourceTree = "<group>"; };
 		79C0CADC225D550300189630 /* NationalParksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalParksService.swift; sourceTree = "<group>"; };
+		79C0CADE225D5C8600189630 /* ErrorAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertController.swift; sourceTree = "<group>"; };
+		79C0CAE4225D628800189630 /* ImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewController.swift; sourceTree = "<group>"; };
+		79C0CAE6225D62A100189630 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		79C0CAE8225D62AF00189630 /* FlickrImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImage.swift; sourceTree = "<group>"; };
+		79C0CAEA225D62BA00189630 /* FlickrPhotoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoData.swift; sourceTree = "<group>"; };
+		79C0CAEC225D62C900189630 /* FlickrPhotoSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhotoSet.swift; sourceTree = "<group>"; };
+		79C0CAEE225D62DB00189630 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		79C0CAF0225D62EA00189630 /* FlickrService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrService.swift; sourceTree = "<group>"; };
+		79C0CAF2225D6F9A00189630 /* FlickrPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +126,15 @@
 			isa = PBXGroup;
 			children = (
 				79C0CAA6225D4FDE00189630 /* AppDelegate.swift */,
-				79C0CAA8225D4FDE00189630 /* ParkListViewController.swift */,
-				79C0CADA225D54F200189630 /* NationalPark.swift */,
-				79C0CADC225D550300189630 /* NationalParksService.swift */,
-				79C0CAD4225D51DF00189630 /* States.swift */,
-				79C0CAD6225D51EF00189630 /* StatePicker.swift */,
-				79C0CAD8225D51F900189630 /* ParkPicker.swift */,
 				79C0CAAA225D4FDE00189630 /* Main.storyboard */,
+				79C0CAE3225D620000189630 /* Service */,
+				79C0CAE2225D61F600189630 /* View */,
+				79C0CAE1225D61EB00189630 /* Model */,
+				79C0CAE8225D62AF00189630 /* FlickrImage.swift */,
+				79C0CAEC225D62C900189630 /* FlickrPhotoSet.swift */,
+				79C0CADA225D54F200189630 /* NationalPark.swift */,
+				79C0CAD4225D51DF00189630 /* States.swift */,
+				79C0CAE0225D61CF00189630 /* Controller */,
 				79C0CAAD225D4FE300189630 /* Assets.xcassets */,
 				79C0CAAF225D4FE300189630 /* LaunchScreen.storyboard */,
 				79C0CAB2225D4FE300189630 /* Info.plist */,
@@ -138,6 +158,45 @@
 				79C0CAC8225D4FE300189630 /* Info.plist */,
 			);
 			path = "National Parks ExplorerUITests";
+			sourceTree = "<group>";
+		};
+		79C0CAE0225D61CF00189630 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79C0CAA8225D4FDE00189630 /* ParkListViewController.swift */,
+				79C0CAE6225D62A100189630 /* ImageDetailViewController.swift */,
+				79C0CAE4225D628800189630 /* ImageCollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		79C0CAE1225D61EB00189630 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79C0CAF2225D6F9A00189630 /* FlickrPhoto.swift */,
+				79C0CAEA225D62BA00189630 /* FlickrPhotoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79C0CAE2225D61F600189630 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79C0CAEE225D62DB00189630 /* PhotoCell.swift */,
+				79C0CAD6225D51EF00189630 /* StatePicker.swift */,
+				79C0CAD8225D51F900189630 /* ParkPicker.swift */,
+				79C0CADE225D5C8600189630 /* ErrorAlertController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		79C0CAE3225D620000189630 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				79C0CAF0225D62EA00189630 /* FlickrService.swift */,
+				79C0CADC225D550300189630 /* NationalParksService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,13 +330,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79C0CAEF225D62DB00189630 /* PhotoCell.swift in Sources */,
+				79C0CAF3225D6F9A00189630 /* FlickrPhoto.swift in Sources */,
+				79C0CAE9225D62AF00189630 /* FlickrImage.swift in Sources */,
+				79C0CAF1225D62EA00189630 /* FlickrService.swift in Sources */,
+				79C0CAED225D62C900189630 /* FlickrPhotoSet.swift in Sources */,
 				79C0CAD5225D51DF00189630 /* States.swift in Sources */,
 				79C0CAA9225D4FDE00189630 /* ParkListViewController.swift in Sources */,
+				79C0CAEB225D62BA00189630 /* FlickrPhotoData.swift in Sources */,
 				79C0CAA7225D4FDE00189630 /* AppDelegate.swift in Sources */,
+				79C0CADF225D5C8600189630 /* ErrorAlertController.swift in Sources */,
 				79C0CAD7225D51EF00189630 /* StatePicker.swift in Sources */,
 				79C0CAD9225D51F900189630 /* ParkPicker.swift in Sources */,
+				79C0CAE5225D628800189630 /* ImageCollectionViewController.swift in Sources */,
 				79C0CADB225D54F200189630 /* NationalPark.swift in Sources */,
 				79C0CADD225D550300189630 /* NationalParksService.swift in Sources */,
+				79C0CAE7225D62A100189630 /* ImageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

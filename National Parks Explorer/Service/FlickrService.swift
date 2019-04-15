@@ -18,10 +18,11 @@ enum FlickrServiceError: Error {
 class FlickrService {
     
     // flickr's dev key, replace with real version
-    let apiKey = "0be9c83b59b1a1e60a3dddeaf277b95b"
+    let apiKey = "179b3c68765a54504f50a3ebdac2f274"
     
     func downloadImage(url: String, completion: @escaping (UIImage?, Error?) -> Void) {
         let url = URL(string: url)
+        
         
         let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             if let data = data {
@@ -47,7 +48,7 @@ class FlickrService {
                 URLQueryItem(name: "api_key", value: apiKey),
                 URLQueryItem(name: "tags", value: query),
                 URLQueryItem(name: "sort", value: "relevance"),
-                URLQueryItem(name: "per_page", value: "100"),
+                URLQueryItem(name: "per_page", value: "40"),
                 URLQueryItem(name: "format", value: "json"),
                 URLQueryItem(name: "nojsoncallback", value: "1"),
             ]

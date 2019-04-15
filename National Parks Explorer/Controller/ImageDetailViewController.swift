@@ -6,4 +6,16 @@
 //  Copyright © 2019 Paul Baker. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class ImageDetailViewController: UIViewController {
+    
+    var flickrImage: FlickrImage?
+    var flickrService = FlickrService()
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}

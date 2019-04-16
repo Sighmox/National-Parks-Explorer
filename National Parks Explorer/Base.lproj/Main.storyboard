@@ -118,7 +118,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="image" destination="tiD-48-cdv" id="ZIq-Ci-eB8"/>
-                                    <segue destination="6UQ-ru-a5q" kind="show" identifier="photoDetail" id="6MA-gw-FYR"/>
+                                    <segue destination="6UQ-ru-a5q" kind="show" identifier="photoDetail" id="29l-vQ-wBY"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -162,6 +162,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WYC-oQ-16b"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Hvl-IO-Q5Z" id="nFM-ZX-xLW"/>
+                        <outlet property="photoDetails" destination="8VU-AF-d3L" id="BDb-XI-nUz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeC-LA-0iK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
